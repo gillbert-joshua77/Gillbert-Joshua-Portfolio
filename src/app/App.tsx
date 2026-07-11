@@ -8,6 +8,7 @@ import { Certifications } from "./components/Certifications";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { ResumePage } from "./components/ResumePage";
+// Resolve image URL in a way compatible with bundlers (avoids missing module type error)
 import faviconUrl from "../imports/icon.png";
 
 export default function App() {
@@ -15,9 +16,7 @@ export default function App() {
   const [showResume, setShowResume] = useState(false);
 
   useEffect(() => {
-    // Page title
-    document.title = "Gillbert Joshua | Portfolio";
-
+    
     // Favicon
     let link = document.querySelector<HTMLLinkElement>("link[rel~='icon']");
     if (!link) {
