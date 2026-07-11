@@ -47,8 +47,7 @@ export function About({ theme }: AboutProps) {
           {/* Text */}
           <div className="space-y-6">
             {[
-              "I grew up in Dindigul, a small city in Tamil Nadu where ambitious tech dreams were uncommon. Today, I'm an IMCA student at Parul University working toward an AI Research Internship at a global lab.",
-              "Outside academics, I'm actively building products that solve real problems while continuously learning new technologies. Every sprint teaches me something new—and I'm just getting started.",
+              `Gillbert Joshua MJ is a developer and IMCA student at Parul University, Gujarat, focused on AI/ML research and full-stack development. He builds practical tools like ClassroomSync (an offline classroom collaboration IDE) and UniGuide AI (an AI-powered college and career guidance platform). His work centers on solving real problems through strong DSA fundamentals, clean architecture, and applied AI — with the long-term goal of contributing to AI research at the graduate level.`,
             ].map((para, i) => (
               <motion.p
                 key={i}
