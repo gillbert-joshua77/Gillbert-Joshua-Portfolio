@@ -57,7 +57,7 @@ export function Hero({ theme }: HeroProps) {
               }}
               className="text-[#7C3AED]"
             >
-              Joshua
+              Joshua M J
             </motion.h1>
           </div>
 
