@@ -1,18 +1,42 @@
 import { useRef } from "react";
 import { motion, useInView } from "motion/react";
-import { GraduationCap, Calendar, Brain, Layers, Target, MapPin } from "lucide-react";
+import { GraduationCap, Calendar, Brain, Layers, Target, MapPin,Sparkles,Code2,Rocket, } from "lucide-react";
 
 interface AboutProps {
   theme: "dark" | "light";
 }
 
 const infoCards = [
-  { icon: GraduationCap, label: "Degree", value: "IMCA (Integrated MCA)" },
-  { icon: Calendar, label: "Year", value: "2025–2030" },
-  { icon: Brain, label: "Current Focus", value: "AI Research & Product Development" },
-  { icon: Layers, label: "Project Status", value: "2 Active · 1 Live" },
-  { icon: Target, label: "Goal", value: "AI Research Internship · 2027" },
-  { icon: MapPin, label: "Hometown", value: "Dindigul, Tamil Nadu" },
+  {
+    icon: GraduationCap,
+    label: "Education",
+    value: "IMCA • Parul University",
+  },
+  {
+    icon: Code2,
+    label: "Tech Stack",
+    value: "React • Node.js • Django",
+  },
+  {
+    icon: Brain,
+    label: "Current Focus",
+    value: "AI Research & Full-Stack Development",
+  },
+  {
+    icon: Rocket,
+    label: "Building",
+    value: "ClassroomSync • UniGuide AI",
+  },
+  {
+    icon: Target,
+    label: "Career Goal",
+    value: "Software Engineer → AI Researcher",
+  },
+  {
+    icon: Sparkles,
+    label: "Workflow",
+    value: "Figma → AI → Code → Deploy",
+  },
 ];
 
 export function About({ theme }: AboutProps) {
@@ -89,12 +113,12 @@ export function About({ theme }: AboutProps) {
                 >
                   <card_item.icon size={16} className="text-[#7C3AED]" />
                 </div>
-                <div className="min-w-0">
+                <div className="min-w-0 flex-1">
                   <div className={`text-xs ${theme === "dark" ? "text-gray-500" : "text-gray-400"}`}>
                     {card_item.label}
                   </div>
                   <div
-                    className={`truncate text-sm font-medium ${
+                    className={`text-sm font-medium leading-5 ${
                       theme === "dark" ? "text-gray-200" : "text-gray-800"
                     }`}
                   >
