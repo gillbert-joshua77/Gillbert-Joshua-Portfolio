@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
-import { Send, Linkedin, Github } from "lucide-react";
+import { Send, Linkedin, Github, Facebook, Instagram } from "lucide-react";
 
 interface ContactProps {
   theme: "dark" | "light";
@@ -27,7 +27,7 @@ export function Contact({ theme }: ContactProps) {
     window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
-  const socials = [
+const socials = [
     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/gillbert-joshua-mj-35489a419/" },
     { icon: Github, label: "GitHub", href: "https://github.com/gillbert-joshua77" },
     {
@@ -39,7 +39,18 @@ export function Contact({ theme }: ContactProps) {
         </svg>
       ),
     },
-  ];
+    {
+      label: "X",
+      href: "https://x.com/GillbertJosh",
+      icon: () => (
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      ),
+    },
+    { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61591553382790" },
+    { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/gillberjoshua77?igsh=MWRxZGRsdmdlNndsMw==" },
+];;
 
   return (
     <section id="contact" className="py-24 px-10 max-w-[1200px] mx-auto">
