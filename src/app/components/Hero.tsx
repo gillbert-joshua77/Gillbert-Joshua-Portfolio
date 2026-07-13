@@ -30,7 +30,7 @@ export function Hero({ theme }: HeroProps) {
               }`}
             >
               <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-              Available for AI Research Internship · 2027
+              Available Internship · 2027
             </span>
           </motion.div>
 
