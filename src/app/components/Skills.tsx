@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "motion/react";
-import { Globe, Server, Code2, Wrench, BookOpen } from "lucide-react";
+import { Globe, Server, Code2, Wrench, BookOpen,Database } from "lucide-react";
 
 interface SkillsProps {
   theme: "dark" | "light";
@@ -10,31 +10,82 @@ const skillGroups = [
   {
     icon: Globe,
     title: "Frontend",
-    items: ["React", "JavaScript", "Tailwind CSS", "HTML5", "CSS3"],
+    items: [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Vite",
+    ],
     row: 0,
   },
   {
     icon: Server,
-    title: "Backend & DB",
-    items: ["Django", "Django REST Framework", "MySQL", "Python", "REST APIs"],
+    title: "Backend",
+    items: [
+      "Node.js",
+      "Express.js",
+      "Django",
+      "Django REST Framework",
+      "REST APIs",
+      "JWT Authentication",
+      "OAuth 2.0",
+    ],
+    row: 0,
+  },
+  {
+    icon: Database,
+    title: "Databases",
+    items: [
+      "MySQL",
+      "SQLite",
+      // "MongoDB", // Uncomment if you've used it
+    ],
     row: 0,
   },
   {
     icon: Code2,
-    title: "Core Languages",
-    items: ["Java", "Python", "C", "JavaScript"],
-    row: 0,
+    title: "Programming Languages",
+    items: [
+      "Java",
+      "Python",
+      "php",
+      "C",
+      "C++",
+      "JavaScript",
+      "TypeScript",
+    ],
+    row: 1,
   },
   {
     icon: Wrench,
     title: "Tools & Platforms",
-    items: ["Git", "GitHub", "VS Code", "Postman"],
+    items: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Postman",
+      "Figma",
+      "npm",
+      "Vercel",
+      "Linux",
+    ],
     row: 1,
   },
   {
     icon: BookOpen,
     title: "CS Fundamentals",
-    items: ["DSA", "OOP", "RDBMS", "Software Engineering", "Computer Networks"],
+    items: [
+      "DSA",
+      "OOP",
+      "DBMS",
+      "Operating Systems",
+      "Computer Networks",
+      "Software Engineering",
+    ],
     row: 1,
   },
 ];
