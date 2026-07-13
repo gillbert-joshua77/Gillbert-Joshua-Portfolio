@@ -7,7 +7,7 @@ interface CertificationsProps {
 }
 
 const badges = [
-  { name: "HackerRank · Java Badge", color: "text-green-400", bg: "bg-green-400/10 border-green-400/20" },
+  { name: "HackerRank ", color: "text-green-400", bg: "bg-green-400/10 border-green-400/20" },
   { name: "LeetCode · Active", color: "text-orange-400", bg: "bg-orange-400/10 border-orange-400/20" },
   { name: "GeeksforGeeks · Member", color: "text-emerald-400", bg: "bg-emerald-400/10 border-emerald-400/20" },
 ];
